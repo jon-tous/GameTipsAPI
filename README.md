@@ -136,4 +136,4 @@ Example calls for all endpoints can be found in [`example.py`](https://github.co
 
 ### UML Sequence Diagram
 
-TODO
+![](https://github.com/jon-tous/GameTipsAPI/blob/main/Sequence%20Diagram.png)
