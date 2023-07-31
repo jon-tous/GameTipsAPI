@@ -11,9 +11,9 @@ config = dotenv_values(".env")
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/", response_description="Root (no meaningful data operation)")
 def root():
-    return {"message": "Hello, world!"}
+    return {"message": "Welcome! This is the root endpoint. Try some of the other endpoints to interact with data."}
 
 @app.on_event("startup")
 def startup_db():

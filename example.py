@@ -10,7 +10,6 @@ HOST = "http://127.0.0.1:8000"
 def get_request(url) -> str:
     try:
         res = requests.get(url)
-
         return json.dumps(res.json(), indent=4)
     except Exception as e:
         return f"Error: {e}"
@@ -19,7 +18,6 @@ def get_request(url) -> str:
 def post_request(url, payload) -> str:
     try:
         res = requests.post(url, json=payload)
-
         return json.dumps(res.json(), indent=4)
     except Exception as e:
         return f"Error: {e}"
