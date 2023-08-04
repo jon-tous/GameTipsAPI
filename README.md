@@ -53,6 +53,8 @@ View interactive, automatically generated documentation on all endpoints in your
 
 To host the API on your own machine, download the code in this repo and install the necessary packages from `requirements.txt`. I recommend using a virtual environment to sandbox these dependencies.
 
+You'll need to set up your own `MongoDB` database and provide a `.env` file with the necessary configuration strings: `USER`, `PASSWORD`, `CLUSTER`, and `DB_NAME`.
+
 Run `uvicorn game-tip-service:app --reload` to start the server and ^C to exit.
 
 ### Tools
