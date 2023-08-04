@@ -47,7 +47,7 @@ Built with `FastAPI`, `Pydantic`, and `PyMongo`.
     -   Example request body:
         -   `{"tip_id": "64c3cdfbd54e7b39dc4b1d74","reason": "Incorrect Information","description": "string"}`
 
-View interactive, automatically generated documentation on all endpoints in your browser at `<host_url>/docs` when the server is running, via `FastAPI`'s _Swagger UI_.
+View interactive, automatically generated documentation on all endpoints in your browser at `<host_url>/docs` when the server is running, via `FastAPI`'s Swagger UI.
 
 ## Set up
 
@@ -55,7 +55,11 @@ To host the API on your own machine, download the code in this repo and install 
 
 Run `uvicorn game-tip-service:app --reload` to start the server and ^C to exit.
 
-Soon, scripts will be included in `/tools` to help back up and restore collections and their documents from/to a `MongoDB` database, as well as a `json` dump of some starting data.
+### Tools
+
+Scripts are included in `/tools` to help back up and restore collections and their documents from a `MongoDB` database to a local JSON file and vice versa. 
+
+A JSON dump of some starting data has also been included in `/tools`.
 
 ## Requesting and receiving data
 
